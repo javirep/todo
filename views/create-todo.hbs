@@ -1,0 +1,12 @@
+<h1>Create a new To-do:</h1>
+
+<form action="/priv/create-todo" method="post">
+    <input type="text" name="title" placeholder="Title">
+    <textarea name="message" placeholder="Description"></textarea>
+    <button type="submit"> Create! </button>
+</form>
+
+{{#if message}}
+    <p>{{message}}</p>
+    <a href="/priv/">go back</a>
+{{/if}} 
